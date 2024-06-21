@@ -4,6 +4,9 @@ project "GLFW"
 	staticruntime "off"
 	warnings "off"
 
+	-- Had to turn static runtime on for some reason...
+	staticruntime "on"
+
 	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
 
